@@ -60,6 +60,29 @@
     ​		正则表达式，从assets里面去剪切文件构建pad模块 例如: ^\d.*\.map$ 剪切以数字开头 .map 结尾的文件到pad目录
   ```
 
+- 从 aab 生成一组 APK
+
+  java -jar bundletool-all-1.6.1.jar build-apks \
+  --bundle=base.aab \
+  --output=base.apks \
+  --ks=luojian37.jks \
+  --ks-pass=pass:**\*\*** \
+  --ks-key-alias=**\*\*** \
+  --key-pass=pass:**\*\***
+
+- 将 APK 部署到连接的设备
+
+  java -jar bundletool-all-1.6.1.jar install-apks --apks=base.apks
+
+- 还原成 apk
+  java -jar bundletool-all-1.6.1.jar build-apks \
+  --mode=universal \
+  --bundle=base.aab \
+  --output=test.apks \
+  --ks=luojian37.jks \
+  --ks-pass=pass:**\*\*** \
+  --ks-key-alias=**\*\*** \
+  --key-pass=pass:**\*\***
 
 * 详细说明
 
