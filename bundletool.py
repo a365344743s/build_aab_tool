@@ -52,7 +52,7 @@ def get_base_dir() -> str:
     return ""
 
 
-APKTOOL_PATH = os.path.join(get_base_dir(), "tools", "apktool-2.5.2-fix.jar")
+APKTOOL_PATH = os.path.join(get_base_dir(), "tools", "apktool_2.9.3.jar")
 AAPT2_PATH = os.path.join(get_base_dir(), "tools", "aapt2", get_system(), "aapt2")
 ANDROID_JAR_PATH = os.path.join(get_base_dir(), "tools", "android_30.jar")
 BUNDLETOOL_TOOL_PATH = os.path.join(get_base_dir(), "tools", "bundletool-all-1.6.1.jar")
