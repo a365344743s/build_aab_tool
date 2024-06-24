@@ -1,63 +1,64 @@
-# apk转化aab格式
+# apk 转化 aab 格式
 
-### 在线工具-aab转换工具
+### 在线工具-aab 转换工具
 
 [https://aab.sfhaa.com](https://aab.sfhaa.com)
 
 ### 使用流程
 
-* 运行环境 python3.6 +
+- 运行环境 python3.6 +
 
-* 安装需要的环境
+- 安装需要的环境
 
-    ```shell
-    pip install -r requirements.txt
-    ```
+  ```shell
+  pip install -r requirements.txt
+  ```
 
-* 执行命令生成aab
+- 执行命令生成 aab
 
-    ```shell
-    python bundletool.py -i test.apk -o test.aab
-    ```
+  ```shell
+  python bundletool.py -i test.apk -o test.aab
+  ```
 
   参数说明:
-    ```
-      -h 
-    
-    ​		show this help message and exit
-      -i 
-    
-    ​		输入apk的路径
-      -o 
-    
-    ​		输出apk的路径
-      --keystore 
-    
-    ​		签名文件路径
-      --store_password 
-    
-    ​		签名文件路径
-      --key_alias 
-    
-    ​		签名文件路径
-      --key_password 
-    
-    ​		签名文件路径
-      --apktool 
-    
-    ​		apktool.jar路径
-      --aapt2 
-    
-    ​		aapt2路径
-      --android 
-    
-    ​		android.jar 路径
-      --bundletool 
-    
-    ​		bundletool.jar 路径
-      --pad_reg 
-    
-    ​		正则表达式，从assets里面去剪切文件构建pad模块 例如: ^\d.*\.map$ 剪切以数字开头 .map 结尾的文件到pad目录
+
+  ```
+    -h
+
+  ​		show this help message and exit
+    -i
+
+  ​		输入apk的路径
+    -o
+
+  ​		输出apk的路径
+    --keystore
+
+  ​		签名文件路径
+    --store_password
+
+  ​		签名文件路径
+    --key_alias
+
+  ​		签名文件路径
+    --key_password
+
+  ​		签名文件路径
+    --apktool
+
+  ​		apktool.jar路径
+    --aapt2
+
+  ​		aapt2路径
+    --android
+
+  ​		android.jar 路径
+    --bundletool
+
+  ​		bundletool.jar 路径
+    --pad_reg
+
+  ​		正则表达式，从assets里面去剪切文件构建pad模块 例如: ^\d.*\.map$ 剪切以数字开头 .map 结尾的文件到pad目录
   ```
 
 - 从 aab 生成一组 APK
@@ -84,7 +85,7 @@
   --ks-key-alias=**\*\*** \
   --key-pass=pass:**\*\***
 
-* 详细说明
+- 详细说明
 
   配套博客为:[https://juejin.cn/post/6982111395621896229](https://juejin.cn/post/6982111395621896229)
 
