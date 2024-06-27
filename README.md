@@ -63,7 +63,7 @@
 
 - 从 aab 生成一组 APK
 
-  java -jar bundletool-all-1.6.1.jar build-apks \
+  java -jar tools/bundletool-all-1.16.0.jar build-apks \
   --bundle=base.aab \
   --output=base.apks \
   --ks=luojian37.jks \
@@ -73,10 +73,10 @@
 
 - 将 APK 部署到连接的设备
 
-  java -jar bundletool-all-1.6.1.jar install-apks --apks=base.apks
+  java -jar tools/bundletool-all-1.16.0.jar install-apks --apks=base.apks
 
 - 还原成 apk
-  java -jar bundletool-all-1.6.1.jar build-apks \
+  java -jar tools/bundletool-all-1.16.0.jar build-apks \
   --mode=universal \
   --bundle=base.aab \
   --output=test.apks \
